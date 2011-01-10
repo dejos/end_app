@@ -1,0 +1,25 @@
+<%= form_for(@labo) do |f| %>
+  <% if @labo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@labo.errors.count, "error") %> prohibited this labo from being saved:</h2>
+
+      <ul>
+      <% @labo.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :labo_naam %><br />
+    <%= f.text_field :labo_naam %>
+  </div>
+  <div class="field">
+    <%= f.label :studiepunten %><br />
+    <%= f.text_field :studiepunten %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

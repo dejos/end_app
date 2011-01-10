@@ -1,0 +1,2 @@
+class LijstController < ApplicationController
+end

@@ -1,0 +1,15 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Labo naam:</b>
+  <%= @labo.labo_naam %>
+</p>
+
+<p>
+  <b>Studiepunten:</b>
+  <%= @labo.studiepunten %>
+</p>
+
+
+<%= link_to 'Edit', edit_labo_path(@labo) %> |
+<%= link_to 'Back', labos_path %>
